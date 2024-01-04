@@ -1,0 +1,159 @@
+/* Banner.css */
+.banner {
+  width: 100%;
+  height: 80vh; /* Adjust based on your preference */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  background-image: url("./mark.jpeg");
+}
+
+.content {
+  text-align: center;
+  max-width: 600px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: slideUp 1s ease-out;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  color: var(--primary-color, #0056b3);
+  margin-bottom: 20px;
+  transition: color 0.3s;
+}
+
+.content p {
+  color: var(--text-color, #333);
+  margin-bottom: 30px;
+}
+
+.btn-5 {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: var(--secondary-color, #ff9000);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-5:hover {
+  background-color: var(--primary-color, #0056b3);
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .banner {
+    height: 60vh;
+  }
+
+  .content {
+    padding: 10px;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+  }
+}
+
+/* src/styles/IndustryList.module.css */
+.containe {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.industryCard {
+  flex: 1 1 200px; /* Adjust width as per your preference */
+  margin: 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.industryCard:hover {
+  transform: translateY(-5px);
+}
+
+/* src/styles/HomePage.module.css */
+.home {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero {
+  background-color: #408ee0; /* Deep blue background */
+  color: #ffffff; /* White text */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.hero p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.vision {
+  background-color: #ffffff; /* White background */
+  color: #333333; /* Dark text */
+  padding: 60px 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.vision h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.vision p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero,
+  .vision {
+    padding: 40px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .vision h2 {
+    font-size: 1.8em;
+  }
+}

@@ -1,0 +1,219 @@
+.teach-with-us-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 20px;
+}
+
+.image-section img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.text-section {
+  max-width: 400px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.text-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.text-section p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.get-started-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.get-started-btn:hover {
+  background-color: #0056b3;
+}
+
+.image-section:hover img {
+  transform: scale(1.05);
+}
+
+.teach-with-us-container:hover .text-section {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .teach-with-us-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-section,
+  .text-section {
+    max-width: 100%;
+  }
+}
+
+.three-sections-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 40px;
+  text-align: center;
+}
+
+.section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.section:hover {
+  transform: translateY(-10px);
+}
+
+.section-image {
+  width: 100%;
+  max-width: 150px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+}
+
+.section h3 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.section p {
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .three-sections-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Styles for the Tabs component */
+.Tabs {
+  font-family: "Arial", sans-serif;
+  border: 1px solid #ddd; /* Add a border for tabs */
+  border-radius: 5px; /* Rounded corners for the tabs container */
+  padding: 20px; /* Padding around the tabs */
+}
+
+/* Styles for the Tab content */
+.TabContent {
+  margin-top: 20px; /* Add some space between tabs and content */
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Active tab styles */
+.TabContent.active {
+  display: block;
+}
+
+/* Inactive tab styles */
+.TabContent.inactive {
+  display: none;
+}
+
+/* Styles for the headings */
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Styling the tab titles */
+.TabTitle {
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.TabTitle.active {
+  background-color: #f0f0f0;
+  border-color: #ddd;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+  .Tabs {
+    padding: 10px;
+  }
+  .TabTitle {
+    padding: 8px 16px;
+  }
+}
+
+.header-container {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.heading {
+  color: #007bff;
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+
+.subheading {
+  color: #333;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.get-started-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.get-started-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2em;
+  }
+
+  .subheading {
+    font-size: 1em;
+  }
+}

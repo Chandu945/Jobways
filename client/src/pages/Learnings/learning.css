@@ -1,0 +1,290 @@
+.elearning-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 5vh 0;
+
+  overflow: hidden;
+}
+
+.elearning-content {
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  background: white; /* Card-like appearance */
+  /* box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); */
+  max-width: 800px; /* Ensure the content is not too wide */
+  animation: slideUp 1s ease-out;
+}
+
+.elearning-image {
+  width: 100%; /* Responsive width */
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 10px; /* Soften the image edges */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.elearning-heading {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.elearning-subheading {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-out;
+}
+
+.elearning-button {
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 2.5s ease-out;
+}
+
+.elearning-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ThreeCards.css */
+
+/* Container styles */
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Card styles */
+.card {
+  width: 400px;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  background-color: #fff;
+  min-height: 50vh;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image styles */
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Card content styles */
+.card-content {
+  padding: 20px;
+}
+
+.card-heading {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card-paragraph {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Button styles */
+.card-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: #0056b3;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px;
+  background-color: #f0f0f0;
+}
+
+.card2 {
+  width: 300px;
+  perspective: 1000px; /* Used for 3D transformations */
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  cursor: pointer;
+}
+
+.card2:hover {
+  transform: scale(1.05) rotateX(10deg);
+}
+
+.card2 h2 {
+  background-color: black;
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  border-bottom: 5px solid #5a68d6;
+  transition: transform 0.5s ease;
+}
+
+.card2:hover h2 {
+  transform: translateY(-10px);
+}
+
+.card2 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: filter 0.5s ease, transform 0.5s ease;
+}
+
+.card2 img:hover {
+  filter: grayscale(50%);
+  transform: scale(1.1);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.card2:hover {
+  animation: pulse 1.5s infinite;
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.header-container {
+  text-align: center;
+  padding: 50px;
+}
+
+.main-heading {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+  animation: fadeInDown 1s ease-out;
+}
+
+.sub-heading {
+  color: #666;
+  margin-bottom: 30px;
+  animation: fadeInUp 1s ease-out;
+}
+
+.action-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.action-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-5px);
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
